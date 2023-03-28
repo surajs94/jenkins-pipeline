@@ -1,14 +1,14 @@
 kind: Service                             
 apiVersion: v1
 metadata:
-  name: webapp-deployment
+  name: devopsengineer
   labels:
-    app: webapp-deployment
+    app: devopsengineer
 spec:
   ports:
     - port: 8080                               
       targetPort: 80
       nodePort: 32100
   selector:
-    app: webapp-deployment                    
+    app: devopsengineer                    
   type: LoadBalancer                   
